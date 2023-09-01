@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-builder-frontend
+  labels:
+    app: app-builder-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-builder-frontend
+  template:
+    metadata:
+      labels:
+        app: app-builder-frontend
+    spec:
+      containers:
+      - name: app-builder-frontend
+        image: oumaima12/app-builder-frontend
+        ports:
+        - containerPort: 80
