@@ -30,7 +30,7 @@ spec:
     app: app-builder-frontend
   ports:
     - protocol: TCP
-      port: 3000
+      port: 80
       targetPort: 3000
 
 ---
@@ -50,5 +50,5 @@ spec:
               service:
                 name: app-builder-frontend-service
                 port:
-                  number: 3000
+                  number: 80
 
