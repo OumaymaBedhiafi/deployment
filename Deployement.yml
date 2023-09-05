@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app-builder-frontend
-        image: oumaima12/app-builder-frontend:v10
+        image: oumaima12/app-builder-frontend:v11
         ports:
         - containerPort: 3000
 
