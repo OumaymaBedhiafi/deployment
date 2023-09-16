@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: appbuilder-upload-service
+  namespace: backend
   labels:
     app: appbuilder-upload-service
 spec:
