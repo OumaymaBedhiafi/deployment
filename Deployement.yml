@@ -21,7 +21,7 @@ spec:
         - containerPort: 3000
 
 ---
-apiVersion: v1
+apiVersion: v5
 kind: Service
 metadata:
   name: app-builder-frontend-service
