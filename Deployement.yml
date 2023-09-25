@@ -34,22 +34,4 @@ spec:
       targetPort: 3000
   type: LoadBalancer
 
----
-
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: app-builder-frontend-ingress
-spec:
-  rules:
-    - host: appbuilder.com  
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: app-builder-frontend-service
-                port:
-                  number: 80
 
