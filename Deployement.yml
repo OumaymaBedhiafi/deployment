@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: appbuilder-upload-service
-        image: oumaima12/upload-image-service:v26
+        image: oumaima12/upload-image-service:v29
         ports:
         - containerPort: 8096
 
