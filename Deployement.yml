@@ -29,6 +29,6 @@ spec:
     app: appbuilder-application-service
   ports:
   - protocol: TCP
-    port: 9880
+    port: 9882
     targetPort: 9882
   type: NodePort
